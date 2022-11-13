@@ -1,0 +1,17 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+/*设计一个程序，统计在读到文件结尾之前读取的字符数。*/
+  
+#include<stdio.h>
+int main()
+{
+	int count = 0;
+	char ch;
+	while ((ch = getchar()) != EOF)
+	{
+		count++;
+	}
+	printf("%d", count);
+	return 0;
+
+}
+
